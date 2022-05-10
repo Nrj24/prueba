@@ -2,9 +2,7 @@ import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
 import java.util.Scanner;
 
-
 public class preMenu {
-
     // Variables
     Scanner scanner = new Scanner(System.in);
     private static int eleccion;
@@ -156,7 +154,7 @@ public class preMenu {
     // calcula dia zodiaco
     public void calculaTuZodiaco() {
         if (diaN > 31 || diaN < 1) {
-            System.out.println("Te saliste del rango, eres un malnacido :( ");
+            System.out.println("Te saliste del rango :( ");
         } else if (mesN > 12 || mesN < 1) {
             System.out.println("Te saliste del rango");
         } else {
@@ -243,7 +241,7 @@ public class preMenu {
                         System.out.println("|________________|");
                     } else {
                         System.out.println("______________________________________________");
-                        System.out.println("| Eres un Dios naciste un dia que no existe! |");
+                        System.out.println("|naciste un dia que no existe! |");
                         System.out.println("|____________________________________________|");
                     }
                     break;
@@ -283,7 +281,7 @@ public class preMenu {
                         System.out.println("|_______________|");
                     } else {
                         System.out.println("______________________________________________");
-                        System.out.println("| Eres un Dios naciste un dia que no existe! |");
+                        System.out.println("|naciste un dia que no existe! |");
                         System.out.println("|____________________________________________|");
                     }
                     break;
@@ -311,7 +309,7 @@ public class preMenu {
                         System.out.println("|___________________|");
                     } else {
                         System.out.println("______________________________________________");
-                        System.out.println("| Eres un Dios naciste un dia que no existe! |");
+                        System.out.println("| naciste un dia que no existe! |");
                         System.out.println("|____________________________________________|");
                     }
                     break;

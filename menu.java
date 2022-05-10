@@ -1,11 +1,9 @@
-import java.io.FileInputStream;
-import java.io.InputStream;
-import java.util.Scanner;
+
 
 public class menu extends preMenu {
     public static void main(String args[]) throws Exception {
 
-        // This is the tittle
+        // Titulo
         System.out.println(ANSI_GREEN+"");
         InputStream ins = new FileInputStream( "titulo.txt" );
         Scanner scanner2 = new Scanner(ins);
@@ -14,7 +12,7 @@ public class menu extends preMenu {
         scanner2.close();
         System.out.println(ANSI_RESET);
         
-        //Here start the menu
+        //Aqui empieza el menu
         preMenu principal = new preMenu();
         principal.menuMain();
         if (getEleccion() >= 1 && getEleccion() <= 4) {
